@@ -1,3 +1,4 @@
 streamlit-audiorecorder
 ipywebrtc
 IPython
+ipywidgets
