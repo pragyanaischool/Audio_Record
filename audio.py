@@ -16,12 +16,13 @@ recorder = AudioRecorder(stream=camera)
 # turn the recorder on
 # still a bit rusty on whether I need to show it 
 # in a separate cell later to make it work
-recorder.recording = True
-# say something
-# turn the recorder off
-recorder.recording = False
-recorder.save('test.wav')
-audio = audiorecorder("Click to record", "Click to stop recording")
+if recorder > 0:
+  recorder.recording = True
+  # say something
+  # turn the recorder off
+  recorder.recording = False
+  recorder.save('test.wav')
+  audio = audiorecorder("Click to record", "Click to stop recording")
 
 if len(audio) > 0:
     # To play audio in frontend:
