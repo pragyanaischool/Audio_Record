@@ -21,6 +21,8 @@ if recorder > 0:
   # say something
   # turn the recorder off
   recorder.recording = False
+  # To play audio in frontend:
+  st.audio(recorder.export().read())  
   recorder.save('test.wav')
 
 audio = audiorecorder("Click to record", "Click to stop recording")
